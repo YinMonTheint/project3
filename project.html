@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: pink;
+    font-size: 20px;
+    font-style: none;
+}
+li{
+    display: inline;
+}
+li a{
+    align-items: center;
+    color:red;
+    text-align: center;
+    padding: 19px 30px;
+    text-decoration: none;
+ }
+ li a:hover{
+    background-color: pink;
+    height: 20px;
+    color: grey;
+ }
+ img{
+    border-radius: 40%;
+    width: 150px;
+    height: auto;
+    margin-left: 30px;
+ }
+ .container{
+    padding-top: 5px;
+    font-size: 25px;
+ }
+ img{
+    width: 200px;
+    height: 150px;
+   margin-top: 10px;
+    border:2px solid black ;
+}
+.portfolio .project .box{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.topic >h2{
+    text-align: center;
+    font-style: italic;
+    margin-top:10px;
+}
+.box:hover img{
+    rotate: 20deg;
+    transition-duration: 0.6s;
+    transition-timing-function:  ease-in-out;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 10px;
+}
+ 
+.project{
+    margin-top: 40px;
+    margin-left:100px ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+button{
+    margin-left:100px ;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(89, 142, 235);
+    border:1px solid black;
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html" class="active"><i class="fa fa-fw fa-home">Home</i></a></li>
+            <li><a href="about.html"><i class="fa fa-bars">About</i></a></li>
+            <li><a href="project.html"><span class="fa fa-file">Projects</span></a></li>
+            <li><a href="contact.html"><span class="fa fa-phone">Contact</span></a></li>
+        </ul>
+    </nav>
+    <div class="portfolio">
+        <div class="detail">
+            <div class="topic">
+                <h2>Latest Projects</h2>
+            </div>
+            <div class="project">
+                <div class="box">                      
+                    <img src="button.png" alt=""> <br>
+                     <button><a href="https://yinmontheint.github.io/button/">See More</a></button>
+                </div>   
+                <div class="box">                    
+                    <img src="buy.png" alt=""><br>
+                    <button><a href="https://yinmontheint.github.io/card/">See More</a></button>
+                </div>   
+                <div class="box">                     
+                    <img src="flex.png" alt=""><br>
+                    <button><a href="https://yinmontheint.github.io/card2/">See More</a></button>
+                </div>   
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
